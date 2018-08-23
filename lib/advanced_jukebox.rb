@@ -37,7 +37,7 @@ def play(my_songs)
   counter = 1
   my_songs.each { |song, directory|
     if song.include?(user_selection) 
-      open directory 
+      system 'open directory' 
       counter = 25 
     end  
     counter+=1
