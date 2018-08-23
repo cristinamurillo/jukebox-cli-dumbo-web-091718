@@ -36,6 +36,10 @@ def play(my_songs)
   user_selection = gets.chomp 
   counter = 1
   my_songs.each { |song, directory|
+<<<<<<< HEAD
+=======
+    binding.pry 
+>>>>>>> 68c2f987eb90cfd45f1139100e3c80bbf9c88a3c
     if song.include?(user_selection) 
       open directory 
       counter = 25 
@@ -71,4 +75,3 @@ def run(songs)
   end 
 end
 
-run(my_songs)
